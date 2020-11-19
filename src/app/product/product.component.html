@@ -1,0 +1,30 @@
+<div class="containerPadre">
+    <div class="container" id="productos">
+        <h3>Productos registrados</h3>
+        <div class="containerTable">
+            <table  class="tableProduct" >
+                <tr>
+                    <th>Codigo</th>
+                    <th>Nombre</th>
+                    <th>Cantidad</th>
+                    <th>Precio Compra</th>
+                </tr>
+                <tr *ngFor=" let post of posts">
+                    <td>{{post.id}}</td>
+                    <td>{{post.nombre}}</td>
+                    <td>{{post.cantidad}}</td>
+                    <td>{{post.precioC}}</td>
+                </tr>
+            </table>
+        </div>
+    </div>  
+    <form id='form'>
+        <div class="options">
+            <input type="text" name="nom" id="nom" placeholder="Nombre" #nom [name]>
+            <input type="number" name="cant" id="cant" placeholder="Cantidad" #cant>
+            <input type="number" step="0.01" name="prec" id="prec" placeholder="Precio Compra" #prec>
+            <button type="reset" (click)="agregar( nom.value ,cant.value,prec.value)" >Agregar nuevo producto</button>
+        </div>
+    </form>
+    <app-logout></app-logout>
+</div>

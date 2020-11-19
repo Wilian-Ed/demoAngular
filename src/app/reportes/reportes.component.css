@@ -1,0 +1,72 @@
+.container{
+    height: 88%;
+    width: 90%;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 5%;
+    padding: 5%;
+}
+
+.ventasGlobal{
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 20px;
+    grid-row: 2 / span 1;
+    grid-column: 1 / span 4;
+}
+
+.promedioProductos{
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 20px;
+    grid-row: 1 / span 1;
+    grid-column: 4  / span 1;
+}
+
+.ventasProductos{
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 20px;
+    grid-row: 1 / span 1;
+    grid-column: 1 / span 3;
+}
+
+h3,h1{
+    text-align: center;
+    color: rgb(58, 58, 58);
+}
+
+.containerTable{
+    width: 100%;
+    overflow-y: scroll;
+    height: 200px;
+}
+th,td{
+    padding-left: 10xp;
+    padding-right: 10px;
+}
+
+td{
+    text-align: center;
+}
+
+.containerTable::-webkit-scrollbar{
+    width: 8px;
+    height: 8px;
+}
+
+.containerTable::-webkit-scrollbar-thumb {
+    background:#1492E6;
+    border-radius: 4px;
+}
+
+.containerTable::-webkit-scrollbar-thumb:hover {
+    background: #b3b3b3;
+    box-shadow: 0 0 2px 1px rgba(0, 0, 0, 0.2);
+}
+
+.containerTable.container::-webkit-scrollbar-thumb:active {
+    background-color: black;
+}
+
+table{
+    width: 100%;
+}

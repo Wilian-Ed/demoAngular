@@ -1,0 +1,10 @@
+<div class="fondo">
+    <div class="window">
+        <div id="iconUser"></div>
+        <p class="mensaje">Inicio de seción</p>
+        <input type="text" name="textUser" id="textUser" #textUser class="texts" placeholder="Usuario" maxlength="10">
+        <input type="password" name="textPass" id="textPass" #textPass class="texts" placeholder="Contraseña" maxlength="8">
+        <button id="Ingresar" (click)="checkLogin(textUser.value,textPass.value)">INGRESAR</button>
+        <p class="mensaje">{{mensaje}}</p>
+    </div>
+</div>

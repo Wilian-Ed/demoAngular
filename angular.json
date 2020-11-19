@@ -120,5 +120,8 @@
       }
     }
   },
-  "defaultProject": "ProyectoPrueba"
+  "defaultProject": "ProyectoPrueba",
+  "cli": {
+    "analytics": "c61d7726-a5b4-4f40-90bd-fbb60392a67f"
+  }
 }

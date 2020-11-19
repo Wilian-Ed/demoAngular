@@ -1,0 +1,45 @@
+
+    <div class="container">
+        <div class="ventasProductos">
+            <h3>Ventas productos</h3>
+            <div class="containerTable">
+                <table  class="tableProduct" >
+                    <tr>
+                        <th>Nombre</th>
+                        <th>Cantidad</th>
+                        <th>Total</th>
+                    </tr>
+                    <tr *ngFor=" let vent of vents">
+                        <td>{{vent.nombre}}</td>
+                        <td>{{vent.cantidad}}</td>
+                        <td>{{vent.precioC}}</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+        <div class="ventasGlobal">
+            <h3>Ventas global</h3>
+            <div class="containerTable">
+                <table  class="tableProduct" >
+                    <tr>
+                        <th>Codigo</th>
+                        <th>Nombre</th>
+                        <th>Cantidad</th>
+                        <th>Precio Compra</th>
+                    </tr>
+                    <tr *ngFor=" let gl of glob">
+                        <td>{{gl.id}}</td>
+                        <td>{{gl.nombre}}</td>
+                        <td>{{gl.cantidad}}</td>
+                        <td>{{gl.precioC}}</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+        <div class="promedioProductos">
+            <h3>Promedio precio productos</h3>
+            <h1>{{num}}</h1>
+            <h3>Venta total</h3>
+            <h1>{{total}}</h1>
+        </div>
+    </div>

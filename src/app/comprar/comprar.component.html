@@ -1,0 +1,47 @@
+<div class="containerPadre">
+    <div class="container" id="productos">
+        <h3>Productos disponibles</h3>
+        <div class="containerTable">
+            <table  class="tableProduct" >
+                <tr>
+                    <th>Codigo</th>
+                    <th>Nombre</th>
+                    <th>Cantidad</th>
+                    <th>Precio Compra</th>
+                    <th>Agregar</th>
+                </tr>
+                <tr *ngFor=" let post of posts">
+                    <td>{{post.id}}</td>
+                    <td>{{post.nombre}}</td>
+                    <td>{{post.cantidad}}</td>
+                    <td>{{post.precioC}}</td>
+                    <td><button (click)=agregar(post)>+</button></td>
+                </tr>
+            </table>
+        </div>
+    </div>  
+    <div class="container" id="lista">
+        <h3>Lista de compras</h3>
+        <div class="containerTable">
+            <table  class="tableProduct" >
+                <tr>
+                    <th>Codigo</th>
+                    <th>Nombre</th>
+                    <th>Cantidad</th>
+                    <th>Precio Compra</th>
+                </tr>
+                <tr *ngFor=" let prod of products">
+                    <td>{{prod.id}}</td>
+                    <td>{{prod.nombre}}</td>
+                    <td>{{prod.cantidad}}</td>
+                    <td>{{prod.precioC}}</td>
+                    <button (click)=eliminar(prod)>x</button>
+                </tr>
+            </table>
+        </div>
+        <h4>{{totalP}}</h4>
+    </div>
+    <button (click)=confirmar() id="confirm">
+        confirmar compra
+    </button>
+</div>
