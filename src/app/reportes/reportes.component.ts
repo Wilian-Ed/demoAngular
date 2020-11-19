@@ -20,7 +20,6 @@ export class ReportesComponent implements OnInit {
       {this.glob=data})
     this.dataSevice.getDataProm().subscribe(data=>{
       this.num=+data;
-      this.num=this.num.toFixed(2);
     })
    }
 
